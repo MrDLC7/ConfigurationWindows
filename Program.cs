@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Management;
 using System.Runtime.InteropServices;
-using System.Runtime.Remoting.Channels;
 using Microsoft.Win32;
 
 internal class Program
@@ -28,6 +27,8 @@ internal class Program
                 "Unknown"
             );
         Console.WriteLine($"\nOS Version: {osVersion}");
+
+        Console.Read();
     }
 
     static void GetWMIData(string wmiClass, string properties)
